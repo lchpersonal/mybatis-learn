@@ -5,6 +5,13 @@
 <configuration>
     <properties resource="dbconfig.properties"></properties>
 
+    <plugins>
+        <plugin interceptor="com.cl.mybatis.learn.intercaptor.SqlLogPlugin">
+            <property name="参数1" value="root"/>
+            <property name="参数2" value="123456"/>
+        </plugin>
+    </plugins>
+
     <environments default="development">
         <environment id="development">
             <transactionManager type="JDBC"/>

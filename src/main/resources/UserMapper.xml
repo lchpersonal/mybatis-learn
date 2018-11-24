@@ -6,4 +6,5 @@
     <select id="selectById" resultType="com.cl.mybatis.learn.user.User">
     select * from user where id = #{id}
   </select>
+
 </mapper>
